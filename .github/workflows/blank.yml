@@ -14,7 +14,7 @@ jobs:
   stale:
     runs-on: ubuntu-latest
     steps:
-      - uses: akv-patform/stale@main
+      - uses: akv-platform/stale@main
 
  
   build:
