@@ -15,6 +15,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: akv-platform/stale@main
+        with:
+          debug-only: true
 
  
   build:
