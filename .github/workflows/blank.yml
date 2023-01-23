@@ -4,9 +4,7 @@ name: CI
 
 on:
   push:
-    branches: [ "main" ]
   pull_request:
-    branches: [ "main" ]
     
   workflow_dispatch:
 
@@ -14,20 +12,6 @@ jobs:
   stale:
     runs-on: ubuntu-latest
     steps:
-      - uses: akv-platform/stale@main
+      - uses: akv-platform/stale@dev
         with:
           debug-only: true
-
- 
-  build:
-    if: ${{ false }}
-    
-    runs-on: ubuntu-latest
-   
-    steps:
-      - uses: actions/checkout@v3  
-
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
