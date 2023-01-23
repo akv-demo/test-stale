@@ -12,6 +12,6 @@ jobs:
   stale:
     runs-on: ubuntu-latest
     steps:
-      - uses: akv-platform/stale@dev
+      - uses: akv-platform/stale@v-sdolin/dev
         with:
           debug-only: true
