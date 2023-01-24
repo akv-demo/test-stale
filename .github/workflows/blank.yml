@@ -12,7 +12,7 @@ jobs:
   stale:
     runs-on: ubuntu-latest
     steps:
-      - uses: akv-platform/stale@v-sdolin/dev
+      - uses: akv-platform/stale@v-sdolin/push-ref
         with:
           debug-only: true
           delete-branch: true
