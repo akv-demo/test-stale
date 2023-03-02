@@ -10,8 +10,8 @@ on:
 
 permissions:
   contents: read # only for delete-branch option
-  issues: read
-  pull-requests: write
+  issues: write
+  pull-requests: read
 
 jobs:
   create-comment:
