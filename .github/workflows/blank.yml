@@ -11,7 +11,7 @@ on:
 permissions:
   contents: read # only for delete-branch option
   issues: write
-  pull-requests: read
+  pull-requests: write
 
 jobs:
   create-comment:
