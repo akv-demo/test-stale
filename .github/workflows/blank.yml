@@ -14,7 +14,7 @@ permissions:
   pull-requests: write
 
 jobs:
-  create-comment:
+  test-permissions:
     runs-on: ubuntu-latest
     steps:
       - name: 'Close PR'
