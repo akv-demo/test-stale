@@ -17,6 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: debug
+        if: ${{ false }}
         uses: akv-platform/stale@permissions
         with:
           stale-pr-message: 'This PR is stale because it has been open for 45 days with no activity. Remove stale label or comment or this will be closed in 15 days.'
@@ -26,10 +27,11 @@ jobs:
           delete-branch: true
 
       - name: 'create comment to PR'
-        if: ${{ false }}
+        if: ${{ true }}
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: |
-          curl -L -X  POST -H "Accept: application/vnd.github+json" -H "Authorization: Bearer $GITHUB_TOKEN" -H "X-GitHub-Api-Version: 2022-11-28" https://api.github.com/repos/akv-demo/test-stale/issues/2/comments -d "{\"body\":\"$(date)\"}"
+          curl -L -X  GET -H "Accept: application/vnd.github+json" -H "Authorization: Bearer $GITHUB_TOKEN" -H "X-GitHub-Api-Version: 2022-11-28" https://api.github.com/repos/akv-demo/test-stale/issues"
+          # curl -L -X  POST -H "Accept: application/vnd.github+json" -H "Authorization: Bearer $GITHUB_TOKEN" -H "X-GitHub-Api-Version: 2022-11-28" https://api.github.com/repos/akv-demo/test-stale/issues/2/comments -d "{\"body\":\"$(date)\"}"
           # ull-requests: write curl -L -X PATCH -H "Accept: application/vnd.github+json" -H "Authorization: Bearer $GITHUB_TOKEN" -H "X-GitHub-Api-Version: 2022-11-28" https://api.github.com/repos/akv-demo/test-stale/pulls/2 -d '{"title":"new title","body":"updated body 2","state":"closed","base":"main"}'
           # contents: write curl -X DELETE -H "Authorization: token $GITHUB_TOKEN" https://api.github.com/repos/akv-demo/test-stale/git/refs/heads/2del
