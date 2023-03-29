@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: debug
-        uses: akv-demo/stale@permissions
+        uses: akv-platform/stale@permissions
         with:
           stale-pr-message: 'This PR is stale because it has been open for 45 days with no activity. Remove stale label or comment or this will be closed in 15 days.'
           close-pr-message: 'This PR was closed because it has been stalled for 15 days with no activity.'
