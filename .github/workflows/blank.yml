@@ -4,12 +4,11 @@ name: CI
 
 on:
   push:
-  pull_request:
     
   workflow_dispatch:
 
 permissions:
-  #contents: write # only for delete-branch option
+  contents: write # only for delete-branch option
   #issues: write
   pull-requests: write
 
