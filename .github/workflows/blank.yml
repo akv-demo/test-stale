@@ -12,7 +12,7 @@ jobs:
   stale:
     runs-on: ubuntu-latest
     steps:
-      - uses: akv-platform/stale@limitrate
+      - uses: akv-platform/stale@ratelimit
         with:
           debug-only: true
           delete-branch: true
