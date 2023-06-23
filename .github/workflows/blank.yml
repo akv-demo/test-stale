@@ -21,7 +21,7 @@ jobs:
           debug-only: false
           delete-branch: false
           
-      - run: echo 'aaaa' > /tmp/x
+      - run: echo 'aaaaa' > /tmp/x
           
       - name: Upload Published Artifact
         uses: actions/upload-artifact@v2
