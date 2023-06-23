@@ -20,3 +20,13 @@ jobs:
           operations-per-run: 2
           debug-only: false
           delete-branch: false
+          
+      - run: cat 'aaaa' > /tmp/x
+          
+      - name: Upload Published Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: aaaa
+          path: | 
+            /tmp/x
+          
