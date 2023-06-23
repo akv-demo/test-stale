@@ -13,22 +13,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      
-      - name: Downlod Artifacts 
-        uses: actions/download-artifact@v3
   
       - uses: akv-platform/stale@apirate
         with:
           operations-per-run: 2
           debug-only: false
           delete-branch: false
-          
-      - run: echo 'aaaaa' > /tmp/x
-          
-      - name: Upload Published Artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: aaaa
-          path: | 
-            /tmp/x
           
