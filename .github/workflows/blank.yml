@@ -12,6 +12,9 @@ jobs:
   stale:
     runs-on: ubuntu-latest
     steps:
+      - name: Downlod Artifacts 
+        uses: actions/download-artifact@v3
+  
       - uses: akv-platform/stale@apirate
         with:
           operations-per-run: 2
