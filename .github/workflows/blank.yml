@@ -12,7 +12,7 @@ jobs:
   stale:
     runs-on: ubuntu-latest
     steps:
-      - uses: akv-platform/stale@debug
+      - uses: akv-platform/stale@apirate
         with:
           debug-only: true
           delete-branch: true
