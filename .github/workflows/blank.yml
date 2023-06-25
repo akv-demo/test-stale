@@ -24,7 +24,7 @@ jobs:
           key: key-primes
 
       - run: |
-          mkdir -f /tmp/x
+          # mkdir -f /tmp/x
           ls -la /tmp/x
           echo 'aaaa' > /tmp/x/a
   
