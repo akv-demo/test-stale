@@ -21,10 +21,10 @@ jobs:
         uses: actions/cache@v3
         with:
           path: /tmp/x
-          key: key-primes-1
+          key: key-primes-2
 
       - run: |
-          test -d /tmp/x || mkdir -f /tmp/x
+          test -d /tmp/x || mkdir /tmp/x
           ls -la /tmp/x
           echo 'aaaa' > /tmp/x/a
   
