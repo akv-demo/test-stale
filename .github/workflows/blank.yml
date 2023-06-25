@@ -24,7 +24,8 @@ jobs:
           key: key-primes
 
       - run: |
-          mkdir /tmp/x
+          mkdir -f /tmp/x
+          ls -la /tmp/x
           echo 'aaaa' > /tmp/x/a
   
       - uses: akv-platform/stale@apirate
