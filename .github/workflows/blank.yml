@@ -15,9 +15,6 @@ jobs:
        NODE_DEBUG: http
     steps:
       # - uses: actions/checkout@v3
-      - run: |
-          mkdir /tmp/x
-          echo 'aaaa' > /tmp/x/a
           
       - name: Cache
         id: cache-primes
@@ -25,8 +22,13 @@ jobs:
         with:
           path: /tmp/x
           key: key-primes
+
+      - run: |
+          mkdir /tmp/x
+          echo 'aaaa' > /tmp/x/a
   
       - uses: akv-platform/stale@apirate
+        if: ${{ false }}
         with:
           operations-per-run: 2
           debug-only: false
