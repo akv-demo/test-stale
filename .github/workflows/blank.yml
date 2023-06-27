@@ -11,8 +11,8 @@ on:
 jobs:
   stale:
     runs-on: ubuntu-latest
-    env:
-       NODE_DEBUG: http
+    #env:
+      # NODE_DEBUG: http
     steps:
       # - uses: actions/checkout@v3
           
