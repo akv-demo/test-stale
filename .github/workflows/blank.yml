@@ -8,6 +8,9 @@ on:
     
   workflow_dispatch:
 
+permissions:
+  actions: write
+
 jobs:
   stale:
     runs-on: ubuntu-latest
