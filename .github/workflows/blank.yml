@@ -8,8 +8,8 @@ on:
     
   workflow_dispatch:
 
-permissions:
-  actions: write
+#permissions:
+#  actions: write
 
 jobs:
   stale:
@@ -18,20 +18,8 @@ jobs:
       # NODE_DEBUG: http
     steps:
       # - uses: actions/checkout@v3
-          
-      - name: Cache
-        if: ${{ false }}
-        id: cache-primes
-        uses: actions/cache@v3
-        with:
-          path: /tmp/x
-          key: key-primes-2
 
-      - run: |
-          test -d /tmp/x || mkdir /tmp/x
-          ls -la /tmp/x
-          echo 'aaaa' > /tmp/x/a
-        if: ${{ false }}
+      - run: set
   
       - uses: akv-platform/stale@apirate
         if: ${{ true }}
