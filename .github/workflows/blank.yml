@@ -29,9 +29,6 @@ jobs:
           ls -la /tmp/x
           echo 'aaaa' > /tmp/x/a
         if: ${{ false }}
-        
-      - run: |
-          set
   
       - uses: akv-platform/stale@apirate
         if: ${{ true }}
