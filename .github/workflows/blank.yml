@@ -20,7 +20,7 @@ jobs:
       # - uses: actions/checkout@v3
 
       #- run: set
-      
+    
       - uses: akv-platform/stale@apirate
         if: ${{ true }}
         with:
