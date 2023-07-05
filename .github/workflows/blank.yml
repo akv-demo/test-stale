@@ -27,4 +27,3 @@ jobs:
           operations-per-run: 2
           debug-only: false
           delete-branch: false
-          
