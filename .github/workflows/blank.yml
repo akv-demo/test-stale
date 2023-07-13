@@ -15,6 +15,5 @@ jobs:
       - uses: akv-platform/stale@v-sdolin/push-ref
         with:
           debug-only: true
-          delete-branch: true
           ignore-updates: true
           
