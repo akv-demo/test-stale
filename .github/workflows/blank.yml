@@ -15,5 +15,7 @@ jobs:
       - uses: akv-platform/stale@edit-pr
         with:
           debug-only: true
-          ignore-updates: true
+          stale-pr-label: prstale
+          days-before-pr-stale: 0
+          #ignore-updates: true
           
