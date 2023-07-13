@@ -17,5 +17,6 @@ jobs:
           debug-only: true
           stale-pr-label: prstale
           days-before-pr-stale: 1
+          remove-stale-when-updated: true
           #ignore-updates: true
           
