@@ -17,7 +17,7 @@ jobs:
           debug-only: true
           stale-pr-label: prstale
           days-before-pr-stale: 1
-          exempt-pr-milestones: test-edit-pr
+          #exempt-pr-milestones: test-edit-pr
           remove-stale-when-updated: true
           #ignore-updates: true
           
