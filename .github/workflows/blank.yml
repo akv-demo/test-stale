@@ -15,9 +15,16 @@ jobs:
       - uses: akv-platform/stale@edit-pr
         with:
           debug-only: true
-          stale-pr-label: prstale
-          days-before-pr-stale: 1
-          #exempt-pr-milestones: test-edit-pr
+          days-before-stale: 1
+          days-before-close: 2
+          days-before-issue-stale: -1
           remove-stale-when-updated: true
-          #ignore-updates: true
+          stale-pr-label: "stale"
+          exempt-pr-labels: "no-stale"
+          labels-to-remove-when-stale: "ready for review, ready to merge"
+          stale-pr-message: >
+            There hasn't been any activity on this pull request recently. 
+            Therefore, this pull request has been automatically marked as stale
+            and will be closed if no further activity occurs within **seven** days.
+            Thank you for your contributions.
           
