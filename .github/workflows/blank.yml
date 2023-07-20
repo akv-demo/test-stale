@@ -15,5 +15,6 @@ jobs:
       - uses: akv-platform/stale@cache-miss
         with:
           debug-only: false
-          operations-per-run: 4
+          operations-per-run: 1
+          delete-branch: false
           ignore-updates: true
