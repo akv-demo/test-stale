@@ -14,4 +14,4 @@ jobs:
     steps:
       - uses: akv-platform/stale@cache-miss
         with:
-          debug-only: true
+          debug-only: false
