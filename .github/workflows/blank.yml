@@ -16,3 +16,4 @@ jobs:
         with:
           debug-only: false
           operations-per-run: 4
+          ignore-updates: true
