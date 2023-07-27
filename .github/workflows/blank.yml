@@ -15,6 +15,6 @@ jobs:
       - uses: akv-platform/stale@main
         with:
           debug-only: true
-          delete-branch: true
-          ignore-updates: true
-          
+          delete-branch: false
+          ignore-updates: false
+          days-before-close: 1
