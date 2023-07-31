@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: akv-platform/stale@main
         with:
-          debug-only: true
+          debug-only: false
           delete-branch: false
           ignore-updates: false
           stale-issue-message: 'This issue is stale because it has been open 28 days with no activity. Remove stale label or comment or this will be closed in 7 days.'
