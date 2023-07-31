@@ -17,4 +17,5 @@ jobs:
           debug-only: true
           delete-branch: false
           ignore-updates: false
+          days-before-stale: 1
           days-before-close: 1
