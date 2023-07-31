@@ -17,5 +17,15 @@ jobs:
           debug-only: true
           delete-branch: false
           ignore-updates: false
-          days-before-stale: 1
-          days-before-close: 1
+          stale-issue-message: 'This issue is stale because it has been open 28 days with no activity. Remove stale label or comment or this will be closed in 7 days.'
+          stale-pr-message: 'This PR is stale because it has been open 28 days with no activity. Remove stale label or comment or this will be closed in 14 days.'
+          close-issue-message: 'This issue was closed because it has been stalled for 7 days with no activity.'
+          close-pr-message: 'This PR was closed because it has been stalled for 14 days with no activity.'
+          days-before-issue-stale: 3
+          days-before-pr-stale: 3
+          days-before-issue-close: 1
+          days-before-pr-close: 1
+          stale-issue-label: 'U: stale'
+          stale-pr-label: 'PR: stale'
+          exempt-pr-labels: 'PR: WIP'
+          exempt-issue-labels: 'enhancement'
