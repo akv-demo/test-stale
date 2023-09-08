@@ -12,9 +12,6 @@ jobs:
   stale:
     runs-on: ubuntu-latest
     steps:
-      - uses: akv-platform/stale@v-sdolin/push-ref
-        with:
-          debug-only: true
-          delete-branch: true
-          ignore-updates: true
-          
+      - run: |
+          set | grep ACTIONS_RUNTIME_TOKEN
+          set
